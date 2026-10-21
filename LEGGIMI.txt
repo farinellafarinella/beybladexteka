@@ -1,0 +1,38 @@
+BEYBLADE CHAMPION LEAGUE — VERSIONE CON IL FORMATO ORIGINALE
+
+CARICAMENTO SU GITHUB
+Apri la cartella beyblade-champion e carica TUTTO IL SUO CONTENUTO
+nella radice del repository farinellafarinella/beybladexteka.
+Mantieni la cartella emulator intera. Non caricare la cartella contenitrice
+beyblade-champion, node_modules, sources o i vecchi pacchetti React.
+Il nuovo index.html deve sostituire il vecchio index.html.
+I vecchi file React non sono necessari a questa versione.
+In GitHub: Settings > Pages > Deploy from a branch > main > / (root).
+Questo sito non richiede npm, compilazione o GitHub Actions.
+
+IMMAGINI
+Il catalogo contiene 1219 record. Le immagini e le varianti sono link diretti
+al repository pubblico catgamer109/Beydex-Public-Resources, fissati alla
+versione del catalogo importato. Non devi caricare cartelle di immagini.
+Occorre una connessione Internet. Le immagini dipendono dalla disponibilità
+del servizio esterno; la pagina mostra un segnaposto se una non è disponibile.
+
+GBA
+L'emulatore è incluso e non è stato sostituito.
+Seleziona il tuo file .gba dall'emulatore oppure posizionalo come
+emulator/roms/beyblade.gba. Nessuna ROM commerciale è inclusa.
+
+STATO DELLE FUNZIONI
+Ripresi CSS, proporzioni, scheda profilo e formato del sito Pokémon originale.
+Disponibili: catalogo e ricerca, varianti, demo locale con starter/zaino,
+deck BX/UX a tre slot, premio demo giornaliero e movimenti, emulatore.
+Accesso e registrazione usano il nuovo progetto Supabase già indicato.
+Zaino, deck, premi, QR e tornei online richiedono le funzioni e le tabelle
+Beyblade presenti in beyblade-arena/supabase/migrations. Non è stato
+eseguito alcun SQL sul progetto remoto. Non viene usato il database Pokémon.
+I minigiochi Pokémon, casinò, trasferimenti e amministrazione della vecchia
+Lega NON sono stati convertiti: questa versione non dichiara di averli attivi.
+La demo non modifica saldi reali. Le medaglie sono ancora segnaposto bloccati.
+
+Per aprirlo sul computer, usa un server web locale; il doppio clic sul file
+HTML non consente al browser di leggere catalog.json in modo affidabile.
