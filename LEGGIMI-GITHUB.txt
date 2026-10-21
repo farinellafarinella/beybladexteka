@@ -1,0 +1,24 @@
+CARICAMENTO DEL SITO SU GITHUB
+
+1. Estrai questo ZIP.
+2. Apri il repository farinellafarinella/beybladexteka.
+3. Carica TUTTO IL CONTENUTO della cartella estratta nella radice del repository.
+   index.html deve essere nella radice, NON in una sottocartella GITHUB.
+   Mantieni emulator come cartella con tutte le sue sottocartelle.
+4. Sostituisci i file con lo stesso nome e conferma il caricamento.
+5. In Settings > Pages scegli Deploy from a branch, main, / (root).
+
+Sono meno di 100 file. Non servono npm, node_modules o compilazione.
+Le immagini dei pezzi sono link diretti: non devi caricarle.
+Lo ZIP non si carica come singolo file su GitHub: prima va estratto.
+Per usare il Game Boy seleziona il tuo .gba oppure aggiungilo come
+emulator/roms/beyblade.gba. Il gioco non è incluso.
+
+SUPABASE
+Installa anche i file dell'altro ZIP, seguendo LEGGIMI-SUPABASE.txt.
+Per le email di accesso e recupero configura l'URL del sito nei redirect
+di autenticazione Supabase: https://farinellafarinella.github.io/beybladexteka/
+
+VERSIONE IN LAVORAZIONE
+Sono inclusi valigetta a box e i tre starter set da tre Beyblade.
+Minigiochi, negozi e pannelli della Lega non sono ancora tutti convertiti.

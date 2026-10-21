@@ -1,0 +1,32 @@
+[
+  {
+    "id": "wizard-rod",
+    "name": "Wizard Rod",
+    "main": "Beyblade_UX-03",
+    "products": [
+      "Beyblade_UX-03",
+      "Beyblade_BX-02",
+      "Beyblade_BX-03"
+    ]
+  },
+  {
+    "id": "shark-scale",
+    "name": "Shark Scale",
+    "main": "Beyblade_UX-15_1",
+    "products": [
+      "Beyblade_UX-15_1",
+      "Beyblade_BX-02",
+      "Beyblade_BX-03"
+    ]
+  },
+  {
+    "id": "phoenix-wing",
+    "name": "Phoenix Wing",
+    "main": "Beyblade_BX-23",
+    "products": [
+      "Beyblade_BX-23",
+      "Beyblade_BX-02",
+      "Beyblade_BX-03"
+    ]
+  }
+]
