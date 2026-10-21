@@ -1,0 +1,29 @@
+BEYBLADE CHAMPION LEAGUE — PROVA SENZA REGISTRAZIONE
+
+Si apre direttamente la Home. Non servono account, email o password.
+NON SERVE SUPABASE per questa versione: non eseguire o caricare SQL.
+Starter, valigetta, deck, nome e punti di prova restano in questo browser.
+Ogni browser/dispositivo ha i propri progressi; cancellando i dati del sito
+si cancellano anche i progressi locali.
+
+Puoi scegliere uno dei tre starter set, vedere i pezzi nella valigetta,
+modificare il deck, consultare il Beydex e aprire l'emulatore GBA.
+Per provare un altro set usa RICOMINCIA LA PROVA dalla Home.
+La conferma azzera starter, valigetta, deck e punti demo di questo browser.
+Il nome e la personalizzazione vengono conservati.
+
+GITHUB
+Estrai lo ZIP e carica TUTTO IL CONTENUTO nella radice del repository.
+index.html deve essere nella radice, non dentro una cartella aggiuntiva.
+Conserva la cartella emulator e tutte le sottocartelle.
+Non caricare lo ZIP come unico file. Non servono npm o compilazione.
+GitHub Pages: main, cartella / (root).
+I file sono meno di 100. Il catalogo è incluso in catalog.json;
+le immagini arrivano tramite link diretti e richiedono Internet.
+
+GBA
+Scegli il tuo file .gba dall'emulatore oppure inseriscilo come
+emulator/roms/beyblade.gba. La ROM non è inclusa.
+
+I tornei online, la classifica condivisa e i premi evento non sono attivi
+nella prova. Le altre sezioni ancora da convertire sono indicate sul sito.

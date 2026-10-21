@@ -1,4 +1,4 @@
-const CACHE='beyblade-original-ui-v2';
+const CACHE='beyblade-original-ui-v3-trial';
 const CORE=['./','./index.html','./app.js','./original-ui.js','./style.css','./beyblade.css','./beydex.mjs','./beydex.css','./sfondo.png','./catalog.json','./starter-sets.json','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('beyblade-original-ui-')&&k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()]));});
