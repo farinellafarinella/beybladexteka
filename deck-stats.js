@@ -1,7 +1,7 @@
 /* Statistiche ricavate esclusivamente da beyparts.json. */
 window.BeyStats = (() => {
   const keys = ['attack', 'defense', 'stamina'];
-  const groups = { Blade: 'blades', Ratchet: 'ratchets', Bit: 'bits' };
+  const groups = { Blade: 'blades', 'Full Blade': 'blades', 'Metal Blade': 'blades', 'Over Blade': 'over_blades', 'Assist Blade': 'assist_blades', 'Lock Chip': 'lock_chips', Ratchet: 'ratchets', Bit: 'bits' };
   const normalize = value => String(value ?? '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
   const names = record => [record.name, record.alias, record.altname].flat().filter(value => typeof value === 'string').map(normalize).filter(Boolean);
   const round = n => Math.round(n * 1e6) / 1e6;
@@ -41,7 +41,8 @@ window.BeyStats = (() => {
         const selected = variants.length === 1 ? variants[0] : variants.find(v => v.id === choices[part?.id]);
         return { part, options: variants, selected: selected || null };
       });
-      const complete = parts.length === 3 && ['Blade', 'Ratchet', 'Bit'].every(category => parts.filter(p => p?.category === category).length === 1);
+      const count = categories => parts.filter(p => categories.includes(p?.category)).length;
+      const complete = count(['Ratchet'])===1 && count(['Bit'])===1 && ((parts.length===3 && count(['Blade','Full Blade'])===1) || (parts.length===5 && count(['Lock Chip'])===1 && count(['Metal Blade','Over Blade'])===1 && count(['Assist Blade'])===1));
       if (!complete || rows.some(row => !row.selected)) return { rows, complete, totals: null, total: null };
       const totals = Object.fromEntries(keys.map(key => [key, round(rows.reduce((sum, row) => sum + row.selected[key], 0))]));
       return { rows, complete, totals, total: round(keys.reduce((sum, key) => sum + totals[key], 0)) };
