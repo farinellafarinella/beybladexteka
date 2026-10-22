@@ -1,8 +1,8 @@
 {
-  "name": "Virtual Quintet — Beyblade X",
-  "short_name": "Quintet",
+  "name": "Beyblade Champion League",
+  "short_name": "Champion",
   "lang": "it",
-  "start_url": "./virtual-quintet.html",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#090e1b",
